@@ -4,7 +4,7 @@ import { Reflector } from 'three/examples/jsm/Addons.js';
 const images = [
     'pc1.jpg',
     'pc2.jpg',
-    'pc3.jpg',
+    'pc3.png',
     'pc4.jpg',
     'pc5.jpg',
     'pc6.jpg',
@@ -84,23 +84,23 @@ scene.add(spotlight);
 scene.add(spotlight.target);
 
 
-const mirror = new Reflector(
-    new THREE.CircleGeometry(10),
-    {
-        color: 0x303030,
-        textureWidth: window.innerWidth,
-        textureHeight: window.innerHeight,
-    }
-);
+// const mirror = new Reflector(
+//     new THREE.CircleGeometry(10),
+//     {
+//         color: 0x303030,
+//         textureWidth: window.innerWidth,
+//         textureHeight: window.innerHeight,
+//     }
+// );
 
-mirror.position.y = -1.1;
-mirror.rotateX(-Math.PI / 2);
-scene.add(mirror);
+// mirror.position.y = -1.1;
+// mirror.rotateX(-Math.PI / 2);
+//scene.add(mirror);
 
 
 function animate() {
 
-    rootNode.rotation.y += 0.1;
+    rootNode.rotation.y += 0.03;
 
 	// cube.rotation.x += 0.01;
 	// cube.rotation.y += 0.01;
